@@ -1,0 +1,33 @@
+@startuml
+left to right direction
+actor Пользователь as User
+
+usecase "авторизация" as Auth
+usecase "работа с заявками" as Applications
+usecase "просмотреть доступных животных" as View
+usecase "подать заявку на усыновление" as Submit
+usecase "отменить заявку на усыновление" as Cancel
+
+User -- Auth
+Auth -- Applications
+Applications --> View
+Applications --> Submit
+Applications --> Cancel
+@enduml
+
+@startuml
+left to right direction
+actor Админ as Admin
+
+usecase "авторизация" as Auth
+usecase "работа с животными" as Animals
+usecase "удалить животное" as Delete
+usecase "просмотреть список животных" as View
+usecase "добавить животное" as Add
+
+Admin -- Auth
+Auth -- Animals
+Animals --> Delete
+Animals --> View
+Animals --> Add
+@enduml

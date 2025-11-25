@@ -1,0 +1,50 @@
+@startuml
+skinparam shadowing false
+skinparam linetype ortho
+skinparam monochrome true
+skinparam nodesep 70
+skinparam ranksep 70
+skinparam dpi 300
+
+entity "CLIENT" as user {
+  * id : INTEGER <<PK>>
+  --
+  name : TEXT
+  login : TEXT
+  phone : TEXT
+  password : TEXT
+}
+
+entity "COURIER" as courier {
+  * id : INTEGER <<PK>>
+  --
+  name : TEXT
+  login : TEXT
+  password : TEXT
+  phone : TEXT
+}
+
+entity "ADMIN" as admin {
+  * id : INTEGER <<PK>>
+  --
+  name : TEXT
+  password : TEXT
+  login : TEXT
+}
+
+    entity "ORDER" as order {
+  * id : INTEGER <<PK>>
+  --
+  user_id : INTEGER <<FK>>
+  courier_id : INTEGER <<FK>>
+  status : BOOL
+  created_at : DATETIME
+  delivery_address : TEXT
+  total_amount : REAL
+}
+
+user ||--o{ order : ""
+courier ||--o{ order : ""
+admin ||--o{ order : ""
+
+@enduml
