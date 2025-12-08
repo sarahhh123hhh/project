@@ -4,25 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e66292bf-b9b4-4977-bcbc-0344cc1ed0eb" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/PythonProject4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/animal_shelter.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/diagrams/BlockDiagram.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/diagrams/ERDIAGRAM.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/diagrams/MyUseCase.puml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/png/img1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/png/img2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/crud_operations.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/database.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/models.py" afterDir="false" />
+    <list default="true" id="e66292bf-b9b4-4977-bcbc-0344cc1ed0eb" name="Changes" comment="main fix">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +105,19 @@
       <option name="presentableId" value="Default" />
       <updated>1763395597394</updated>
     </task>
+    <task id="LOCAL-00001" summary="main fix">
+      <option name="closed" value="true" />
+      <created>1764054632286</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1764054632287</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="main fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="main fix" />
   </component>
 </project>
