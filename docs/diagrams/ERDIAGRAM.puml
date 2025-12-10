@@ -6,16 +6,7 @@ skinparam nodesep 70
 skinparam ranksep 70
 skinparam dpi 300
 
-entity "CLIENT" as user {
-  * id : INTEGER <<PK>>
-  --
-  name : TEXT
-  login : TEXT
-  phone : TEXT
-  password : TEXT
-}
-
-entity "COURIER" as courier {
+entity "CLIENT" as client {
   * id : INTEGER <<PK>>
   --
   name : TEXT
@@ -28,23 +19,38 @@ entity "ADMIN" as admin {
   * id : INTEGER <<PK>>
   --
   name : TEXT
-  password : TEXT
   login : TEXT
+  password : TEXT
 }
 
-    entity "ORDER" as order {
+entity "ANIMAL" as animal {
   * id : INTEGER <<PK>>
   --
-  user_id : INTEGER <<FK>>
-  courier_id : INTEGER <<FK>>
-  status : BOOL
-  created_at : DATETIME
-  delivery_address : TEXT
-  total_amount : REAL
+  name : TEXT
+  species : TEXT
+  breed : TEXT
+  age : INTEGER
+  gender : TEXT
+  description : TEXT
+  photo_url : TEXT
+  is_available : BOOLEAN
+  added_at : DATETIME
 }
 
-user ||--o{ order : ""
-courier ||--o{ order : ""
-admin ||--o{ order : ""
+entity "ADOPTION_REQUEST" as request {
+  * id : INTEGER <<PK>>
+  --
+  client_id : INTEGER <<FK>>
+  animal_id : INTEGER <<FK>>
+  status : TEXT
+  created_at : DATETIME
+  updated_at : DATETIME
+  comment : TEXT
+}
+
+' Связи
+client ||--o{ request : ""
+animal ||--o{ request : ""
+admin ||--o{ animal : ""
 
 @enduml
