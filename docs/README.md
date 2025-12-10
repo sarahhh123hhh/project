@@ -58,3 +58,13 @@
 
 3. **Data Layer (Слой данных)**  
    Хранение информации в базе данных **SQLite** или **PostgreSQL**.
+
+| Сущность | Поля |
+|----------|------|
+| CLIENT | id, name, login, password, phone |
+| ADMIN | id, name, login, password |
+| ANIMAL | id, name, species, breed, age, gender, description, photo_url, is_available, added_at |
+| ADOPTION_REQUEST | id, client_id, animal_id, status, created_at, updated_at, comment |
+
+## 6. ER-диаграмма базы данных
+![img.png](png/img.png)
