@@ -1,7 +1,7 @@
 # models/crud_operations.py
 import sqlite3
 from models.database import Database
-from models.models import Animal, AdoptionRequest, User
+from models import Animal, AdoptionRequest
 from typing import List, Tuple, Optional, Dict
 
 
